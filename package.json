@@ -1,0 +1,33 @@
+{
+  "name": "pagina_itecgeo",
+  "version": "1.0.0",
+  "description": "pagina de itecgeo",
+  "main": "app.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "build2": "npx webpack --config webpack.config.js "
+  },
+  "keywords": [
+    "ok",
+    "page"
+  ],
+  "author": "miguel.danto@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "xpress": "^2.4.6"
+  },
+  "devDependencies": {
+    "bulma": "^0.7.5",
+    "css-loader": "^3.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "node-sass": "^4.12.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5"
+  }
+}
