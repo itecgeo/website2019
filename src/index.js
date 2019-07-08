@@ -1,6 +1,7 @@
 require("./index.scss");
+require("./componentes/func1.js");
+
 
 
 let date_deploy=new Date()
-console.log("Exportando un date1")
-export {date_deploy}
+export default date_deploy
