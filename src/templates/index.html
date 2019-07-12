@@ -1,16 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-navbar-fixed-top">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='shortcut icon' type='image/x-icon' href='assets/favicon.ico' />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Itecgeo</title>
+    <title>ITECGEO</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maptalks/dist/maptalks.css">
+    <link rel="stylesheet" href="https://www.itecgeo.com/_sub_cdn/libs/font-awesome-4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
+    <nav class="navbar is-black is-espaced is-fixed-top">
+        <div class="container">
+            <div class="navbar-brand">
+                <div class="navbar-burger burger" data-target="menu1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="navbar-menu" id="menu1">
+                <div class="navbar-start">
+                    <div class="navbar-item">
+                        <div class="field is-grouped">
+                            <p class="control">
+                                <a href="#" class="button">
+                                    <span class="icon"><i class="fa fa-twitter"></i></span>
+                                </a>
+                            </p>
+                            <p class="control">
+                                <a href="#" class="button">
+                                    <span class="icon"><i class="fa fa-facebook"></i></span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-end">
+                    <a href="#" class="navbar-item">Inicio</a>
+                    <a href="#" class="navbar-item">Quienes somos</a>
+                    <a href="#" class="navbar-item">Unete</a>
+                    <a href="#" class="navbar-item">Blog</a>
+                </div>
+            </div>
+        </div>
+    </nav>
     <div id="mapa-head"></div>
-    <div id="root"></div>
-    <h1 class="title">Una pagina</h1>
+    <div class="zone-title">
+        <img src="assets/itecgeo4.png" alt="itecgeo.png" class="logo1" >
+    </div>
+    <!-- las entradas del blog aqui van-->
+    <section class="blog-entries" >
+        <div class="container" id="blog-container1"></div>
+    </section>
+    
 </body>
 </html>
