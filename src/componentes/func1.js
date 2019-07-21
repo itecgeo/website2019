@@ -1,21 +1,21 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import MapaHead from "./mapa-head"
+import MapaHeadReact from "./mapa-head-react"
 import BlogItems from "./blog-item"
 
 //Agregando el mapa con MapaHead
-const element = <MapaHead usemap={false}/>;
-ReactDOM.render(element,document.getElementById('mapa-head'));
+//const element = <MapaHead usemap={true}/>;
+//ReactDOM.render(element,document.getElementById('mapa-head'));
+
+const element2 = <MapaHeadReact />;
+ReactDOM.render(element2,document.getElementById('mapa-head'));
 
 //agregando los elementos del blog
 
-let elementosBlog=[
-  {"titulo":"Title1","image":"##","link":"#","author":"miguel1","fecha":"12-12-19"},
-  {"titulo":"Title2","image":"##","link":"#","author":"miguel2","fecha":"1-10-19"},
-  {"titulo":"Title3","image":"##","link":"#","author":"miguel3","fecha":"25-6-19"}
-];
 
-let itemsBlog=<BlogItems items={elementosBlog}/>
+
+let itemsBlog=<BlogItems limit={3} feed="https://blog.itecgeo.com/feed/"/>
 console.log(itemsBlog)
 ReactDOM.render(itemsBlog,document.getElementById('blog-container1'));
 

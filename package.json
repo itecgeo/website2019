@@ -18,6 +18,8 @@
     "maptalks.biglayer": "^0.4.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-map-gl": "^5.0.7",
+    "rss-parser": "^3.7.2",
     "xpress": "^2.4.6"
   },
   "devDependencies": {

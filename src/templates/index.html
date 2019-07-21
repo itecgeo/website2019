@@ -50,10 +50,37 @@
     <div class="zone-title">
         <img src="assets/itecgeo4.png" alt="itecgeo.png" class="logo1" >
     </div>
+
+    <div id="mapa-head-prueba"></div>
     <!-- las entradas del blog aqui van-->
     <section class="blog-entries" >
+        <div class="has-text-centered button1-area">
+                <a class="button is-dark is-outlined is-large" href="https://blog.itecgeo.com">
+                        Artículos, tips, tutoriales y mas
+                </a>
+        </div>
         <div class="container" id="blog-container1"></div>
     </section>
     
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+                © <strong>ITECGEO</strong> 2019
+          </p>
+        </div>
+      </footer>
+
+    <svg height="0" xmlns="http://www.w3.org/2000/svg">
+        <filter id="drop-shadow">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="5"/>
+            <feOffset dx="8" dy="8" result="offsetblur"/>
+            <feFlood flood-color="rgba(0,0,0,0.5)"/>
+            <feComposite in2="offsetblur" operator="in"/>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </svg>
 </body>
 </html>
