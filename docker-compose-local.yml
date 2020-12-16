@@ -1,0 +1,21 @@
+version: "3"
+
+services: 
+  compiler:
+    build: .
+    #command: 
+      #- "echo 'migiuelon'"
+      #- "npm run build"
+    #working_dir: /app
+    volumes: 
+      - "./dist:/app/dist"
+
+  www:
+    image: nginx
+    ports:
+      - "8082:80"
+    depends_on: 
+      - compiler
+    volumes:
+      - ./dist:/usr/share/nginx/html:ro
+    #environment: 
